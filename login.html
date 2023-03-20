@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>.
+    <link rel="stylesheet" href="/CSS/login.css" />
+    </head>
+  <body>
+    <div class="container">
+      <header>Login</header>
+      <form action="C:\xampp\htdocs\js\login.js">
+        <div class="field email-field">
+          <div class="input-field">
+            <input
+              type="email"
+              placeholder="Enter your email"
+              class="email"
+              name="email"
+              required
+              onchange="checkEmail(event.target.value)"
+            />
+          </div>
+          <span class="error email-error">
+            <i class="bx bx-error-circle error-icon"></i>
+            <p class="error-text">Please enter a valid email</p>
+          </span>
+        </div>
+        <div class="field create-password">
+          <div class="input-field">
+            <input
+              type="password"
+              placeholder="Enter the password"
+              class="password"
+              name="password"
+              required
+              onchange="checkPassowrd(event.target.value)"
+            />
+            <i class="bx bx-hide show-hide"></i>
+          </div>
+        </div>
+      </form>
+      <div class="input-field button">
+        <button class="check_button" onclick="login()">LOGIN IN</button>
+      </div>
+      <div class="input-field button">
+        <button class="check_button" onclick="location.href='register.html'">SIGN IN</button>
+      </div>
+    </div>
+    <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script src="/js/login.js"></script>
+  </body>
+</html>
